@@ -7,9 +7,9 @@ import os
 pwd = os.getcwd()
 print(pwd)
 # Load the pre-trained Random Forest model
-rf_model = joblib.load('./assets/random_forest_model.pkl')
-LR_model = joblib.load('./assets/LR_model_model.pkl')
-xg_model = joblib.load('./assets/XG_model_model.pkl')
+rf_model = joblib.load('/mount/src/census_income/streamlit_app/streamlit_app/assets/random_forest_model.pkl')
+LR_model = joblib.load('/mount/src/census_income/streamlit_app/streamlit_app/assets/LR_model_model.pkl')
+xg_model = joblib.load('/mount/src/census_income/streamlit_app/streamlit_app/assets/XG_model_model.pkl')
 
 # Streamlit app
 st.title("Prediction App")
