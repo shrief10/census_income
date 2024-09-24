@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 from sklearn.preprocessing import LabelEncoder
+import os
 
-
+pwd = os.getcwd()
+print(pwd)
 # Load the pre-trained Random Forest model
 rf_model = joblib.load('./assets/random_forest_model.pkl')
 LR_model = joblib.load('./assets/LR_model_model.pkl')
